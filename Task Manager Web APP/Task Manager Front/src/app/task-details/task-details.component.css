@@ -1,0 +1,39 @@
+.task-details {
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-right: 10px; /* Add margin to the right */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: #28a745;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.task-table th, .task-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

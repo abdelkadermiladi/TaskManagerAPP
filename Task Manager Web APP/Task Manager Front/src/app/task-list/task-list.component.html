@@ -1,0 +1,12 @@
+<div class="task-list">
+  <h2>Task List</h2>
+  <ul cdkDropList (cdkDropListDropped)="reorderTasks($event)">
+    <li *ngFor="let task of tasks" class="task-card" cdkDrag>
+      <input type="checkbox" [(ngModel)]="task.completed" (change)="updateTaskStatus(task)">
+      <span class="task-title">{{ task.title }}</span>
+      <button class="btn view-btn" (click)="viewTask(task.id)">View</button>
+      <button class="btn delete-btn" (click)="deleteTask(task.id)">Delete</button>
+    </li>
+  </ul>
+  <button class="btn create-btn" (click)="create()">Create a new task</button>
+</div>

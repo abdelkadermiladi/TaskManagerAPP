@@ -1,0 +1,40 @@
+<div class="task-details" *ngIf="task">
+  <h2>Task Details</h2>
+  <table class="task-table">
+    <tr>
+      <th>Task</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Id</td>
+      <td>{{ task.id }}</td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td>{{ task.title }}</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>{{ task.description }}</td>
+    </tr>
+    <tr>
+      <td>Completed</td>
+      <td>{{ task.completed }}</td>
+    </tr>
+    <tr>
+      <td>Created at</td>
+      <td>{{ task.created_at }}</td>
+    </tr>
+    <tr>
+      <td>Updated at</td>
+      <td>{{ task.updated_at }}</td>
+    </tr>
+    <tr>
+      <td>Due to</td>
+      <td>{{ task.dueDate }}</td>
+    </tr>
+  </table>
+  <br>
+  <button class="btn btn2" (click)="editTask(task.id)">Edit</button>
+  <button (click)="navigateToTasks()" class="btn btn2">Back to Tasks</button>
+</div>
