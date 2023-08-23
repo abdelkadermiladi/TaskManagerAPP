@@ -30,6 +30,5 @@ This is a web application designed to help you manage tasks efficiently and stay
 - Spring Boot: Backend framework for building APIs and handling business logic.
 - MySQL: Relational database for storing tasks, users, and related information.
 - Other libraries and tools you used in the project.
-- 
 
 
