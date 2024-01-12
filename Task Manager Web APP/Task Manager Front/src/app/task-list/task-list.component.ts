@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
 import { Router } from '@angular/router'; // Import the Router
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+//import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-task-list',
@@ -50,10 +50,10 @@ export class TaskListComponent implements OnInit {
   }
   
   
-  reorderTasks(event: CdkDragDrop<any[]>) {
-    moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
-    // Update the order of tasks in the backend (send requests if necessary)
-  }
+  // reorderTasks(event: CdkDragDrop<any[]>) {
+  //   moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
+  //   // Update the order of tasks in the backend (send requests if necessary)
+  // }
 
 
 }

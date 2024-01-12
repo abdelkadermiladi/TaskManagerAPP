@@ -10,7 +10,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { TaskDetailsComponent } from './task-details/task-details.component';
 import { TaskUpdateComponent } from './task-update/task-update.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+//import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DatePipe } from '@angular/common';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { DatePipe } from '@angular/common';
     AppRoutingModule,
     FormsModule, // Add the FormsModule here
     HttpClientModule, // Add HttpClientModule here
-    DragDropModule,
+    //DragDropModule,
 
 
   ],
